@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment-10.1</title>
+</head>
+<script>
+    var person =
+     {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person1 = {
+  firstName:"Prateek",
+  middleName:"Sagar",
+  lastName: "Richhariya"
+}
+var person2 = {
+  firstName:"Mukesh ",
+  lastName: "Khanna",
+}
+alert(  person.fullName.call(person2));
+
+ person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+ person1 = {
+  firstName:"Sagar",
+  lastName: "Richhariya"
+}
+
+alert(person.fullName.apply(person1, ["Mukesh", "Ramesh"]));
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

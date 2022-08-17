@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment-10.5</title>
+</head>
+<script>
+var people = [
+  { name: "Ashish", age: 23 },
+  { name: "Ajay", age: 21 },
+  { name: "Arvind", age: 26 },
+  { name: "Mahesh", age: 28 },
+  { name: "Jay", age: 19 }
+];
+var age=people.filter((age1)=>age1.age<25)
+.sort((n1,n2)=>n1.age-n2.age).reverse();
+document.write("Program to Filter out people whose age is less than 25 in descending order.= " + JSON.stringify(age));
+</script>
+<body>
+
+</body>
+</html>
